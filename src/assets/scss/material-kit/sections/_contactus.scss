@@ -28,7 +28,7 @@
 
     .card-contact{
         max-width: 560px;
-        margin: 80px 0 80px 150px;
+        float: left;
 
         .info{
             padding: 0;
@@ -37,7 +37,7 @@
     }
     .map{
         width: 100%;
-        height: 100%;
+        height: 800px;
         position: absolute;
     }
 
@@ -48,5 +48,12 @@
             font-size: 2.2em;
             max-width: 45px;
         }
+    }
+}
+
+.contactus-1 .card-contact,
+.contactus-2 .card-contact{
+    .card-header .card-title{
+        margin-bottom: 0.75rem !important;
     }
 }

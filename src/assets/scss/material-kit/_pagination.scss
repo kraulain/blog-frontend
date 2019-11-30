@@ -1,6 +1,6 @@
 .pagination{
-    > li > a,
-    > li > span{
+    > .page-item > .page-link,
+    > .page-item > span{
         border: 0;
         border-radius: 30px !important;
         transition: all .3s;
@@ -14,6 +14,7 @@
         font-size: $mdb-btn-font-size-base;
         text-transform: uppercase;
         background: transparent;
+        text-align: center;
 
         &:hover,
         &:focus{
@@ -21,8 +22,8 @@
         }
     }
 
-    > .active > a,
-    > .active > span{
+    > .page-item.active > a,
+    > .page-item.active > span{
         color: $gray-color;
 
         &,
@@ -38,8 +39,8 @@
 
     // Colors
     &.pagination-info{
-        > .active > a,
-        > .active > span{
+        > .page-item.active > a,
+        > .page-item.active > span{
             &,
             &:focus,
             &:hover{
@@ -51,8 +52,8 @@
     }
 
     &.pagination-success{
-        > .active > a,
-        > .active > span{
+        > .page-item.active > a,
+        > .page-item.active > span{
             &,
             &:focus,
             &:hover{
@@ -64,8 +65,8 @@
     }
 
     &.pagination-warning{
-        > .active > a,
-        > .active > span{
+        > .page-item.active > a,
+        > .page-item.active > span{
             &,
             &:focus,
             &:hover{
@@ -77,8 +78,8 @@
     }
 
     &.pagination-danger{
-        > .active > a,
-        > .active > span{
+        > .page-item.active > a,
+        > .page-item.active > span{
             &,
             &:focus,
             &:hover{
@@ -88,4 +89,10 @@
             }
         }
     }
+}
+
+.pagination {
+  .page-item .page-link:focus {
+    box-shadow: none;
+  }
 }

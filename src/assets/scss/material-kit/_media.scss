@@ -13,11 +13,16 @@
         }
     }
 
+
     .media-heading small{
         font-family: $font-family-sans-serif;
     }
     .media-body{
         padding-right: 10px;
+
+        textarea{
+            margin-top: 15px;
+        }
 
         .media .media-body{
             padding-right: 0px;
@@ -37,11 +42,11 @@
     }
     p{
         color: $gray-color;
-        font-size: $font-paragraph;
+        font-size: 1rem;
         line-height: 1.6em;
     }
 }
 .media-left,
-.media>.pull-left{
+.media>.float-left{
     padding: 10px;
 }

@@ -1,5 +1,3 @@
-
-
 .togglebutton {
   vertical-align: middle;
   &, label, input, .toggle {
@@ -45,7 +43,7 @@
       position: relative;
       box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
       left: -5px;
-      top: -3px;
+      top: -2.5px;
       border: 1px solid $mdb-checkbox-border-color;
       transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
     }

@@ -75,7 +75,7 @@
         ul li b{
             color: $white-color;
         }
-        .category{
+        .card-category{
             color: rgba($white-color,.5);
         }
     }
@@ -122,14 +122,14 @@
     padding: 80px 0;
 }
 
-@import 'sections/_headers';
-@import 'sections/_features';
-@import 'sections/_blogs';
-@import 'sections/_team';
-@import 'sections/_projects';
-@import 'sections/_pricing';
-@import 'sections/_testimonials';
-@import 'sections/_contactus';
-@import 'sections/_footers';
-
-@import 'sections/_social-subscribe-lines';
+// @import 'sections/_headers';
+// @import 'sections/_features';
+// @import 'sections/_blogs';
+// @import 'sections/_team';
+// @import 'sections/_projects';
+// @import 'sections/_pricing';
+// @import 'sections/_testimonials';
+// @import 'sections/_contactus';
+// @import 'sections/_footers';
+//
+// @import 'sections/_social-subscribe-lines';

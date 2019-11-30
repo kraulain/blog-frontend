@@ -3,7 +3,7 @@
         margin-top: 10px
     }
     .nav-pills{
-        display: inline-block;
+        display: inline-flex;
     }
 }
 
@@ -63,7 +63,7 @@
     .card-background{
         margin-bottom: 0;
 
-         .card-content{
+         .card-body{
             padding-top: 140px;
             padding-bottom: 140px;
         }
@@ -71,5 +71,8 @@
     hr{
         margin: 70px auto;
         max-width: 970px;
+    }
+    .card{
+        margin-top: 0;
     }
 }

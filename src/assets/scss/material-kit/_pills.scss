@@ -1,31 +1,36 @@
 .nav-pills{
 
-    .section-dark &,
-    .section-image &{
-        > li > a{
-            color: $gray-color;
-        }
-        > li{
-            > a:hover,
-            > a:focus{
-                background-color: #EEEEEE;
-            }
+    &:not(.flex-column) .nav-item + .nav-item:not(:first-child){
+        margin-left: 5px;
+    }
+
+    &.flex-column{
+        .nav-item + .nav-item{
+            margin-top: 5px;
         }
     }
 
-    > li {
-        > a{
+    .nav-item {
+        .nav-link{
             line-height: $mdb-btn-font-size-base * 2;
             text-transform: uppercase;
             font-size: $mdb-btn-font-size-base;
             font-weight: $font-weight-bold;
             min-width: 100px;
             text-align: center;
-            color: $gray;
+            color: $pills-color;
             transition: all .3s;
+            border-radius: 30px;
+            padding: 10px 15px;
 
             &:hover{
                 background-color: rgba(200, 200, 200, 0.2);
+            }
+
+            &.active{
+                color: $white-color;
+                background-color: $brand-primary;
+                @include shadow-big-color($brand-primary);
             }
         }
 
@@ -35,90 +40,82 @@
             padding: 15px 0;
         }
 
-        &.active > a{
-            &,
-            &:focus,
-            &:hover{
-                background-color: $brand-primary;
-                color: $white-color;
-                @include shadow-big-color($brand-primary);
-            }
-        }
-
-    }
-
-    &:not(.nav-pills-icons){
-        > li > a{
-            border-radius: $border-radius-extreme;
-        }
-    }
-
-    &.nav-stacked{
-        > li + li{
-            margin-top: 5px;
-        }
     }
 
     &.nav-pills-info{
-        > li {
-            &.active > a{
+        .nav-item {
+            .nav-link.active{
                 &,
                 &:focus,
                 &:hover{
                     background-color: $brand-info;
                     @include shadow-big-color($brand-info);
+                    color: $white-color;
+                }
+            }
+        }
+    }
+
+    &.nav-pills-rose{
+        .nav-item {
+            .nav-link.active{
+                &,
+                &:focus,
+                &:hover{
+                    background-color: $brand-rose;
+                    @include shadow-big-color($brand-rose);
+                    color: $white-color;
                 }
             }
         }
     }
 
     &.nav-pills-success{
-        > li {
-            &.active > a{
+        .nav-item {
+            .nav-link.active{
                 &,
                 &:focus,
                 &:hover{
                     background-color: $brand-success;
                     @include shadow-big-color($brand-success);
+                    color: $white-color;
                 }
             }
         }
     }
 
     &.nav-pills-warning{
-        > li {
-            &.active > a{
+        .nav-item {
+            .nav-link.active{
                 &,
                 &:focus,
                 &:hover{
                     background-color: $brand-warning;
                     @include shadow-big-color($brand-warning);
+                    color: $white-color;
                 }
             }
         }
     }
 
     &.nav-pills-danger{
-        > li {
-            &.active > a{
+        .nav-item {
+            .nav-link.active{
                 &,
                 &:focus,
                 &:hover{
                     background-color: $brand-danger;
-                    @include shadow-big-color($brand-warning);
+                    @include shadow-big-color($brand-danger);
+                    color: $white-color;
                 }
             }
         }
     }
-    &.nav-pills-rose{
-        > li {
-            &.active > a{
-                &,
-                &:focus,
-                &:hover{
-                    background-color: $brand-rose;
-                    @include shadow-big-color($brand-rose);
-                }
+
+    &.nav-pills-icons{
+        .nav-item{
+            .nav-link{
+                border-radius: 4px;
             }
         }
     }

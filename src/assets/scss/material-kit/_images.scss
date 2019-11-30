@@ -4,3 +4,7 @@
 .img-raised{
     @include shadow-big-image();
 }
+
+.rounded{
+    border-radius: $border-radius-large !important;
+}

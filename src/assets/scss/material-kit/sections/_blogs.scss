@@ -15,3 +15,14 @@
         text-align: center;
     }
 }
+
+.card-blog{
+    .row{
+        .card-category{
+            margin-bottom: 0;
+        }
+        .card-description{
+            line-height: 1.313rem;
+        }
+    }
+}

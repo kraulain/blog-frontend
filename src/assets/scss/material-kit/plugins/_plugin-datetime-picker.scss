@@ -7,7 +7,7 @@
  $bs-datetimepicker-active-bg: $brand-primary !default;
  $bs-datetimepicker-active-color: $white-color !default;
  $bs-datetimepicker-border-radius: $border-radius-base;
- $bs-datetimepicker-btn-hover-bg: $gray-lighter !default;
+ $bs-datetimepicker-btn-hover-bg: #eee !default;
  $bs-datetimepicker-disabled-color: $gray-lighter !default;
  $bs-datetimepicker-alternate-color: $gray-light !default;
  $bs-datetimepicker-secondary-border-color: #ccc !default;
@@ -32,6 +32,9 @@
 
 
     a{
+        &:hover{
+            box-shadow: none !important;
+        }
         .btn{
             &:hover{
                 background-color: transparent;
@@ -44,15 +47,15 @@
         width: 19em;
 
         &.timepicker-sbs {
-            @media (min-width: $screen-sm-min) {
+            @media (min-width: 768px) {
                 width: 38em;
             }
 
-            @media (min-width: $screen-md-min) {
+            @media (min-width: 991px) {
                 width: 38em;
             }
 
-            @media (min-width: $screen-lg-min) {
+            @media (min-width: 1200px) {
                 width: 38em;
             }
         }
@@ -68,11 +71,11 @@
 
         &.top {
             margin-top: auto;
-            margin-bottom: -20px;
+            margin-bottom: 27px;
 
             &.open{
                 margin-top: auto;
-                margin-bottom: 5px;
+                margin-bottom: 27px;
             }
         }
 
@@ -185,6 +188,7 @@
     .picker-switch {
         text-align: center;
         border-radius: $bs-datetimepicker-border-radius;
+        font-size: 0.875rem;
 
         &::after {
             @extend .sr-only;
@@ -316,6 +320,8 @@
                 border-radius: 50%;
                 position: relative;
                 z-index: -1;
+                color: $black-color;
+                font-size: 0.875rem;
             }
 
             &.minute > div,
